@@ -1,67 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chusree</title>
-
-    <!--<link rel="stylesheet" href="styles.css"> -->
-    
-    <style>
-        table {
-            background-color: antiquewhite;
-            border-style: dotted;
-        }
-        thead{
-            background-color: aqua;         
-        }
-        img {
-            width:40%; height:40%;
-            border-radius: 20%;
-            }
-        hr {
-        background-color: white;
-        border-style: dotted;
-        height: 2px;
-        width: 30%;
-            }
-
-</style>
-    
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Chusree Kewsakunkovit</h2>    
-     <table > 
-        <thead>
-            <tr>
-                <th>
-                    รูปภาพ
-                </th>
-                 <th>
-                    ข้อมูล
-                </th>
-            </tr>
-        </thead>       
-        <tr>  
-            <td><img src="ChusreeIMG.JPG" alt="" ></td> 
-            <td>ชูศรี เกลียวสกุลโกวิท</td>   
-        </tr>             
-        <tr> 
-            <td>  </td> 
-            <td>สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล</td>           
-        </tr> 
-        <tr>  
-            <td>  </td> 
-            <td>ประเภทวิชาเทคโนโลยีอุตสาหกรรม</td>         
-        </tr> 
-        <tr>   
-            <td>  </td> 
-            <td><a href ="https://chonvc.ac.th/?usid=10000001&language=Th"> <h3>วิทยาลัยอาชีวศึกษาชลบุรี</h3></a> </td>         
-        </tr> 
+   <div class="quiz-container">
+       <h1></h1>
+       <p id="question">PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer1('a')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer1('b')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer1('c')">C) พิม</button>
+       <button class="button" onclick="checkAnswer1('d')">D) ภีม</button>
+       <p id="result"></p>
+   </div> 
 
-    </table>
-    <hr>
-    <h4>ชื่อตามบัตรประชาชน ชูศรี เกลียวสกุลโกวิท เรียกสั้น ๆ ว่า ต้อย ได้คะ</h4>
-    <a href ="contact.html">Contact</a> 
+   <div class="quiz-chonvc">
+    <h1></h1>
+    <p id="questionVC">วิทยาลัยอาชีวศึกษาชลบุรีอยู่อำเภอใด ?</p>
+    <button class="button2" onclick="checkAnswer2('a')">A) พนัสนิคม</button>
+    <button class="button2" onclick="checkAnswer2('b')">B) ศรีราชา</button>
+    <button class="button2" onclick="checkAnswer2('c')">C) เมือง</button>
+    <button class="button2" onclick="checkAnswer2('d')">D) เมืองพัทยา</button>
+    <p id="resultVC"></p>
+    </div>
+   
+    <script src="index.js" charset="utf-8"> </script>  
 </body>
 </html>
